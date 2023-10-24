@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="/Home/script.js">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!--Phan thanh nav-->
+    <header>
+        <div class="container-fluid">
+         <div class="d-flex justify-content-end me-2">
+            <i class="fa fa-bell btn btn-light " aria-hidden="true" title="Thông Báo"></i> 
+                <a class="link-dark text-decoration-none" href="#">Đăng nhập/Đăng ký</a>  
+        </div>   
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="/Home/index.html">
+                    <img src="images/logo.png" alt="Logo" class="rounded-pill">
+                    <h3>ECM</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/Home/index.html">Trang chủ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/ThongTinHoTro/index.html">Thông tin hỗ trợ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Dịch vụ thanh toán</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/TraCuu/tracuu.html">Tra cứu thông tin</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/LienHe/lienhe.html">Liên Hệ</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex align-items-center">
+                      <input class="form-control me-2" type="text" placeholder="Tìm Kiếm">
+                      <i class="fa fa-search btn btn-light" aria-hidden="true"></i> 
+                    </form>
+                  </div>
+            </div>
+        </nav>
+    </header>
+  
+<!-- Phan carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  
+  <div class="carousel-inner">
+    <a href="#" class="carousel-item active">
+      <img src="images/image1.jpg" alt="giải pháp tiết kiệm điện" class="d-block img-fluid" style="width:100%">
+    </a>
+
+    <a href="#" class="carousel-item">
+      <img src="images/image2.jpg" alt="các nguồn điện" class="d-block img-fluid" style="width:100%">
+    </a>
+
+    <a href="#" class="carousel-item">
+      <img src="images/image3.jpg" alt="thống kê" class="d-block img-fluid" style="width:100%"> 
+    </a>
+  </div>
+  
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+
+
+  <div class="container-main">
+    <div class="row m-4">
+      <h3>
+        <a href="#" class="link-dark text-decoration-none">
+          <strong>Tin Mới</strong>
+          <img src="images/new.jpg" alt="news" style="width: 40px; height: 30px;">
+        </a>
+        
+      </h3>
+    
+
+      <div class="col-12 col-md-7 col-sm-12 col-lg-5">
+          <a href="#" class="link-dark text-decoration-none">
+            <img src="images/tintuc1.jpg" alt="" style="width: 400px;">
+            <h4>
+              <strong>EVN Hà Nội đổi lịch chốt số điện, người tiêu dùng thiệt hại hay lợi?</strong>
+            </h4>
+            <p>“Giá điện theo lũy tiến, đương nhiên càng dùng nhiều, giá sẽ càng tăng. Do đó, khi chốt số điện 30 ngày, giá sẽ khác với 40 ngày…”, PGS.TS Ngô Trí Long nhận định.</p>
+          </a>
+      </div>
+  
+
+      <div class="col-12 col-md-8 col-sm-12 col-lg-7">
+        <div class="row mb-4 me-4 ">
+          <div class="col-md-5 col-lg-5">
+            <a href="#" class="link-dark text-decoration-none">
+              <img src="images/tintuc2.jpg" alt="" style="width: 200px;">   
+            </a>
+          </div>
+          <div class="col-md-8 col-lg-7">
+            <a href="#" class="link-dark text-decoration-none">
+             <h6>
+            <strong>Tiêu thụ điện cả nước tăng lên 825 triệu kWh/ngày, EVN đảm bảo cung ứng</strong>
+          </h6> 
+          <p>Tâp đoàn Điện lực Việt Nam (EVN) sẽ đảm bảo cấp điện trong tháng 8/2023 với sản lượng tiêu thụ bình quân ngày dự kiến ở mức 825,8 triệu kWh</p>
+            </a>
+            
+          </div>
+          <hr class="mt-4">
+        </div>
+
+        <div class="row mb-4 me-4">
+          <div class="col-md-5 col-lg-5">
+            <a href="#" class="link-dark text-decoration-none">
+              <img src="images/tintuc3.jpg" alt="" style="width: 200px;">
+            </a>
+          </div>
+          <div class="col-md-8 col-lg-7">
+            <a href="#" class="link-dark text-decoration-none">
+              <h6>
+              <strong>Tiêu thụ điện ở Hà Nội lập kỷ lục mới, cao chưa từng có</strong>
+          </h6>
+          <p>Sản lượng tiêu thụ điện trong ngày 27.7 tại Hà Nội đã lập kỷ lục mới, với trên 101 triệu kWh, vượt gần 1 triệu kWh so với sản lượng tiêu thụ trong ngày cao nhất của năm 2022.</p>
+            </a>
+            
+          </div>
+          <hr class="mt-4">
+        </div>
+
+        <div class="row mb-4 me-4">
+          <div class="col-md-5 col-lg-5">
+            <a href="#" class="link-dark text-decoration-none">
+              <img src="images/tintuc4.jpg" alt="" style="width: 200px;">
+            </a>
+          </div>
+          <div class="col-md-8 col-lg-7">
+            <a href="#" class="link-dark text-decoration-none">
+             <h6>
+              <strong>Phập phồng lo hóa đơn tiền điện tăng</strong>
+          </h6>
+          <p>Hóa đơn tiền điện sau ngày nghỉ lễ tại nhiều nơi lại tăng cao chót vót khiến nhiều hộ gia đình ở TP.HCM đứng ngồi không yên, lo lắng đà tăng tiếp diễn, bất chấp thời tiết đã vào mùa mưa.</p>
+            </a>
+            
+          </div>
+          <hr class="mt-4">
+        </div>
+
+      </div>
+    </div>
+    <hr class="mt-4">
+  </div>
+
+  <div class="container-main2">
+    <div class="m-4">
+    <h3>
+      <a href="#" class="link-dark text-decoration-none">
+         <strong>Các vấn đề mà bạn quan tâm</strong>
+        </a>
+    </h3>
+    </div>
+
+    <div>
+     <div class="m-4">
+      <a href="#" >
+        <img src="images/image4.jpg" alt="" style="width: 100%;">
+      </a>
+     </div>
+     <div class="m-4">
+      <a href="#">
+        <img src="images/image5.jpg" alt="" style="width: 100%;">
+      </a>
+     </div>
+     <div class="m-4">
+      <a href="#">
+        <img src="images/image6.jpg" alt="" style="width: 100%;">
+      </a>
+     </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>About Us</h5>
+          <p>Chúng tôi là một tổ chức quản lý người tiêu dùng điện hàng đầu với sứ mệnh cung cấp dịch vụ đáng tin cậy và chất lượng cao.
+            Với đội ngũ chuyên gia giàu kinh nghiệm và sự đổi mới liên tục, chúng tôi luôn tìm kiếm những giải pháp thông minh
+             và hiệu quả để đáp ứng nhu cầu của khách hàng và góp phần vào bảo vệ môi trường.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h5>Contact Us</h5>
+          <p>Email: nhomECM@gmail.com <br> Phone: 123-456-7890</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

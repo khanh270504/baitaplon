@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Tiền Điện</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+      
+        <div class="container-fluid">
+         <div class="d-flex justify-content-end me-2">
+            <i class="fa fa-bell btn btn-light " aria-hidden="true" title="Thông Báo"></i> 
+                <a class="link-dark text-decoration-none" href="#">Đăng nhập/Đăng ký</a>  
+        </div>   
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+          <div class="container">
+              <a class="navbar-brand" href="/Home/index.html">
+                  <img src="logo.jpg.jpg" alt="Logo" class="rounded-pill">
+                  <h3>ECM</h3>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/Home/index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/ThongTinHoTro/index.html">Thông tin hỗ trợ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dịch vụ thanh toán</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/TraCuu/tracuu.html">Tra cứu thông tin</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/LienHe/lienhe.html">Liên Hệ</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex align-items-center">
+                    <input class="form-control me-2" type="text" placeholder="Tìm Kiếm">
+                    <i class="fa fa-search btn btn-light" aria-hidden="true"></i> 
+                  </form>
+                </div>
+          </div>
+      </nav>
+    </header>
+    <div class="image-container">
+      <img src="tietkiemdien.jpg" alt="Mô tả ảnh">
+    </div>
+    
+    <h1>Tính Tiền Điện</h1>
+    <div class="input-container m-2">
+        <label for="device">Thiết Bị:</label>
+        <select id="device">
+            <option value="fridge">Tủ Lạnh</option>
+            <option value="tv">TiVi</option>
+            <option value="ac">Điều Hòa</option>
+            <option value="ac">Các thiết bị chiếu sáng</option>
+            <option value="ac">Bình Nóng Lạnh</option>
+            <option value="ac">Quạt</option>
+            <option value="ac">Lò Vi Sóng</option>
+            <option value="ac">Máy Lọc Nước</option>
+            <option value="ac">Các Thiết Bị Điện Tử</option>
+            <option value="ac">Khác</option>
+            
+
+
+        </select>
+    </div>
+    <div class="input-container">
+        <label for="power">Công Suất (W):</label>
+        <input type="number" id="power" />
+    </div>
+    <div class="input-container">
+        <label for="hours">Số Giờ Sử Dụng Trong Tháng:</label>
+        <input type="number" id="hours" />
+    </div>
+  
+    <button id="calculate">Tính Tiền Điện</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+    <footer></footer><footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>About Us</h5>
+              <p>Chúng tôi là một tổ chức quản lý người tiêu dùng điện hàng đầu với sứ mệnh cung cấp dịch vụ đáng tin cậy và chất lượng cao.
+                Với đội ngũ chuyên gia giàu kinh nghiệm và sự đổi mới liên tục, chúng tôi luôn tìm kiếm những giải pháp thông minh
+                 và hiệu quả để đáp ứng nhu cầu của khách hàng và góp phần vào bảo vệ môi trường.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h5>Contact Us</h5>
+              <p>Email: info@gmail.com<br>Phone: 123-456-7890</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>&copy; 2023 Your Company. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

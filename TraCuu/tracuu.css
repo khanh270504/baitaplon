@@ -1,0 +1,38 @@
+body {
+
+    transition: 2s linear;
+}
+.container > :last-child {
+    margin-bottom: 0;
+}
+.container-fluid {
+    background: rgb(65, 226, 76);
+}
+.container-fluid a {
+    font-weight: bold;
+}
+.navbar-brand {
+    text-align: center;
+}
+.navbar-brand img {
+    width: 30%;
+    height: auto;
+}
+.navbar-brand h3{
+   color: rgb(77, 196, 41);
+   font-weight: bold;
+}
+.nav-item {
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar-nav .nav-item :hover {
+    cursor: pointer;
+    color: #FCD917;
+}
+.d-flex  i{
+cursor: pointer;
+}
+.container .d-flex i:hover {
+    color: red;
+}

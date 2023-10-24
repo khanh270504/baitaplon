@@ -1,0 +1,76 @@
+body {
+    transition: 2s linear;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-container {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.container-fluid {
+    background: rgb(65, 226, 76);
+}
+.container-fluid a {
+    font-weight: bold;
+}
+.navbar-brand {
+    text-align: center;
+}
+.navbar-brand img {
+    width: 30%;
+    height: auto;
+}
+.navbar-brand h3{
+   color: rgb(77, 196, 41);
+   font-weight: bold;
+}
+.nav-item {
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar-nav .nav-item :hover {
+    cursor: pointer;
+    color: #FCD917;
+}
+.d-flex  i{
+cursor: pointer;
+}
+.container .d-flex i:hover {
+    color: red;
+}
+.image-container {
+    float: right; /* Lệch về bên phải */
+    width: 380px; /* Điều chỉnh chiều rộng của div */
+    padding-right: 20px;
+    height: 150px; /* Khoảng cách từ ảnh đến lề phải */
+  }
+  
+  .image-container img {
+    width: 100%; 
+    height: auto; 
+  }
+  
