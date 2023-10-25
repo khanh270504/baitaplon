@@ -2,6 +2,7 @@ body {
     transition: 2s linear;
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 20px;
 }
 
 h1 {
@@ -73,4 +74,24 @@ cursor: pointer;
     width: 100%; 
     height: auto; 
   }
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
   
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #result {
+    margin-top: 10px;
+    font-weight: bold;
+  }
