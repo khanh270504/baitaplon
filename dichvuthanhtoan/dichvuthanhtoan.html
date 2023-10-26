@@ -23,56 +23,85 @@
     </div>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="/baitaplon/Home/index.html">
-                    <img src="logo.png" alt="Logo" class="rounded-pill">
-                    <h3>ECM</h3>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav me-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="/baitaplon/Home/index.html">Trang chủ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/baitaplon/ThongTinHoTro/index.html">Thông tin hỗ trợ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/baitaplon/dichvuthanhtoan/dichvuthanhtoan.html">Dịch vụ thanh toán</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/baitaplon/TraCuu/tracuu.html">Tra cứu thông tin</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/baitaplon/LienHe/lienhe.html">Liên Hệ</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex align-items-center">
-                      <input class="form-control me-2" type="text" placeholder="Tìm Kiếm">
-                      <i class="fa fa-search btn btn-light" aria-hidden="true"></i> 
-                    </form>
-                  </div>
-            </div>
-        </nav>
+        <div class="container">
+            <a class="navbar-brand" href="/Home/index.html">
+                <img src="logo.png" alt="Logo" class="rounded-pill">
+                <h3>ECM</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Home/index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/ThongTinHoTro/index.html">Thông tin hỗ trợ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/dichvuthanhtoan/dichvuthanhtoan.html">Dịch vụ thanh toán</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/TraCuu/tracuu.html">Tra cứu thông tin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/LienHe/lienhe.html">Liên Hệ</a>
+                  </li>
+                </ul>
+                <form class="d-flex align-items-center">
+                  <input class="form-control me-2" type="text" placeholder="Tìm Kiếm">
+                  <i class="fa fa-search btn btn-light" aria-hidden="true"></i> 
+                </form>
+              </div>
+        </div>
+    </nav>
 </header>
-    <h1>THANH TOÁN HÓA ĐƠN VÀ DỊCH VỤ</h1>
-    <h2>Thanh toán trực tuyến</h2>
-    <p>Hiện tại chỉ hỗ trợ thanh toán qua VN Pay </p>
-    <input type="button" value="Lấy mã thanh toán" onclick="sayHello()">
-    <script>
-      function sayHello(){
-        alert("Thông tin tài khoản thanh toán : Ngân hàng Vietinbank Số tk 0337147815 Tên chủ tk Tran Minh Chau");
-      }
-    </script>
-    <li>Ứng dụng trên điện thoại</li>
-    <li>website và ứng dụng của đối tác khách hàng</li>
-    <li>Ứng dụng ngân hàng , ví điện tử</li>
-    <h2>Thanh toán trực tiếp</h2>
-    <p>Với hơn 20.000 điểm giao dịch trên toàn quốc</p>
-    <li>Các chuỗi cửa hàng tiện lợi</li>
-    <li>Hệ thống các ngân hàng</li>
+<h1>THANH TOÁN HÓA ĐƠN VÀ DỊCH VỤ</h1>
+  
+<h2>Thanh toán trực tuyến</h2>
+<p>Hiện tại chỉ hỗ trợ thanh toán qua VN Pay</p>
+<button onclick="sayHello()">Lấy mã thanh toán</button>
+
+<script>
+   //nhap vao chuong
+const chuong = document.querySelector('.fa-bell');
+
+chuong.onclick = function() {
+  alert('Bạn có thông báo mới!');
+};
+
+// Thanh cong cu tim kiem
+const timkiem = document.querySelector('.form-control');
+const searchIcon = document.querySelector('.fa-search');
+ searchIcon.onclick = function() {
+  const searchText = timkiem.value.trim();
+
+  if (searchText === '') {
+    alert('Vui lòng nhập từ khóa tìm kiếm!');
+  } 
+};
+
+  function sayHello(){
+    alert("Thông tin tài khoản thanh toán: Ngân hàng Vietinbank, Số tài khoản: 0337147815, Tên chủ tài khoản: Tran Minh Chau");
+  }
+</script>
+
+<ul>
+  <li>Ứng dụng trên điện thoại</li>
+  <li>Website và ứng dụng của đối tác khách hàng</li>
+  <li>Ứng dụng ngân hàng, ví điện tử</li>
+</ul>
+
+<h2>Thanh toán trực tiếp</h2>
+<p>Với hơn 20.000 điểm giao dịch trên toàn quốc</p>
+
+<ul>
+  <li>Các chuỗi cửa hàng tiện lợi</li>
+  <li>Hệ thống các ngân hàng</li>
+</ul>
+</body>
+
     <div class="container-fluid bg-dark">
       <footer class="text-bg-dark">
         <div class="container p-4 pb-0">
